@@ -23,16 +23,17 @@
     iPlan-It | Home
   </title>
   <!--     Fonts and icons     -->
-  <link type= "text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
   <!-- Nucleo Icons -->
-  <link type= "text/css" href="{{ url_for('static', filename='CSS/nucleo-icons.css') }}" rel="stylesheet" />
-  <link type= "text/css" href="{{ url_for('static', filename='CSS/nucleo-svg.css') }}" rel="stylesheet" />
+  <link type="text/css" href="{{ url_for('static', filename='CSS/nucleo-icons.css') }}" rel="stylesheet" />
+  <link type="text/css" href="{{ url_for('static', filename='CSS/nucleo-svg.css') }}" rel="stylesheet" />
   <!-- Font Awesome Icons -->
   <!-- <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script> -->
   <!-- <link href="{{ url_for('static', filename='CSS/nucleo-svg.css') }}" rel="stylesheet" /> -->
   <link rel="stylesheet" href="{{ url_for('static', filename='font-awesome-4.7.0/css/font-awesome.min.css') }}">
   <!-- CSS Files -->
-  <link id="pagestyle" type= "text/css" href="{{ url_for('static', filename='CSS/argon-dashboard.css') }}" rel="stylesheet" />
+  <link id="pagestyle" type="text/css" href="{{ url_for('static', filename='CSS/argon-dashboard.css') }}"
+    rel="stylesheet" />
 
 
 </head>
@@ -69,8 +70,8 @@
         </span>
       </button> -->
       <!-- <div class="collapse navbar-collapse" id="navigation"> -->
-        <ul class="navbar-nav mx-auto">
-          <!-- <li class="nav-item">
+      <ul class="navbar-nav mx-auto">
+        <!-- <li class="nav-item">
             <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="/dashboard">
               <i class="fa fa-chart-pie opacity-6  me-1"></i>
               Dashboard
@@ -82,20 +83,20 @@
               Profile
             </a>
           </li> -->
-          <!-- <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link me-2" href="/sign-up">
               <i class="fas fa-user-circle opacity-6  me-1"></i>
               Sign Up
             </a>
           </li> -->
-          <li class="nav-item">
-            <a class="nav-link me-2" href="/login-g">
-              <i class="fa fa-key opacity-6  me-1"></i>
-              Sign In
-            </a>
-          </li>
-        </ul>
-        <!-- <ul class="navbar-nav d-lg-block d-none">
+        <li class="nav-item">
+          <a class="nav-link me-2" href="/login">
+            <i class="fa fa-key opacity-6  me-1"></i>
+            Sign In
+          </a>
+        </li>
+      </ul>
+      <!-- <ul class="navbar-nav d-lg-block d-none">
           <li class="nav-item">
             <a href="https://www.creative-tim.com/product/argon-dashboard" class="btn btn-sm mb-0 me-1 bg-gradient-light">Free Download</a>
           </li>
@@ -108,9 +109,10 @@
     <!-- Photo by <a href="https://unsplash.com/@mattragland?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matt Ragland</a> on <a href="https://unsplash.com/photos/02z1I7gv4ao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
    -->
 
-    <div class="page-header align-items-start min-vh-40 pt-5 pb-11 m-3 border-radius-lg" >
-      
-      <video autoplay muted loop style="min-width: 100%; min-height: 100%; z-index: -1; top: 0; left:0; position:absolute; padding-left: 0%;">
+    <div class="page-header align-items-start min-vh-40 pt-5 pb-11 m-3 border-radius-lg">
+
+      <video autoplay muted loop
+        style="min-width: 100%; min-height: 100%; z-index: -1; top: 0; left:0; position:absolute; padding-left: 0%;">
         <!-- <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" /> -->
         <!-- <source src="{{ url_for('static', filename='pexels_videos_2330728 (540p).mp4') }}" type="video/mp4" /> -->
         <source src="{{ url_for('static', filename='pexels_videos_1448735 (540p).mp4') }}" type="video/mp4" />
@@ -135,24 +137,26 @@
         <div class="col-xl-4 col-lg-4 col-md-4 h-100">
           <div class="overflow-hidden h-100 p-0 ">
 
-              <div class="carousel-item h-100 active align-items-center vertical-center">
-                <h3 class="text-black mb-2 mt-9">To-do list + Calendar ✔️</h3>
-            <p class="text-lead text-black">You don't have to choose between a to-do list and a calendar; you can use both simultaneously! </p>
+            <div class="carousel-item h-100 active align-items-center vertical-center">
+              <h3 class="text-black mb-2 mt-9">To-do list + Calendar ✔️</h3>
+              <p class="text-lead text-black">You don't have to choose between a to-do list and a calendar; you can use
+                both simultaneously! </p>
 
-              </div>
+            </div>
           </div>
         </div>
 
 
         <div class="col-xl-8 col-lg-8 col-md-8 h-100 justify-content-end">
           <div class="card card-carousel overflow-hidden h-100 p-0">
-            
-              <div class="carousel-item h-100 active" style="background-image: url('static/Plan-it_Schedule.gif'); height: 100%; background-size: cover; background-position: center; background-repeat: no-repeat;">
-                
-                <div class=" mt-1">
-                  <p class=" ms-2" style="color: aliceblue; height: 450px;"></a></p>
-                </div>
+
+            <div class="carousel-item h-100 active"
+              style="background-image: url('static/Plan-it_Schedule.gif'); height: 100%; background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+              <div class=" mt-1">
+                <p class=" ms-2" style="color: aliceblue; height: 450px;"></a></p>
               </div>
+            </div>
 
           </div>
         </div>
@@ -179,15 +183,16 @@
           </div>
         </div>
 
-        
+
         <div class="col-xl-4 col-lg-4 col-md-4 h-100">
           <div class="overflow-hidden h-100 p-0 ">
 
-              <div class="carousel-item h-100 active align-items-center vertical-center">
-                <h3 class="text-black mb-2 mt-4">Track Productivity 🚀</h3>
-            <p class="text-lead text-black">We help you track and find your best time management style to maximize your productivity!</p>
+            <div class="carousel-item h-100 active align-items-center vertical-center">
+              <h3 class="text-black mb-2 mt-4">Track Productivity 🚀</h3>
+              <p class="text-lead text-black">We help you track and find your best time management style to maximize
+                your productivity!</p>
 
-              </div>
+            </div>
           </div>
         </div>
 
@@ -200,14 +205,16 @@
         <div class="col-xl-4 col-lg-4 col-md-4 h-100">
           <div class="overflow-hidden h-100 p-0 ">
 
-              <div class="carousel-item h-100 active align-items-center vertical-center">
-                <h3 class="text-black mb-2 mt-6">AI for Wellbeing 🦾</h3>
-            <p class="text-lead text-black">We use AI to help you track and improve your wellbeing, because work is just one aspect of your life.
-              <br><br>
-              Your tasks are automatically tagged to help you track and improve your intellectual, occupational, physical, and social wellbeing.
-            </p>
+            <div class="carousel-item h-100 active align-items-center vertical-center">
+              <h3 class="text-black mb-2 mt-6">AI for Wellbeing 🦾</h3>
+              <p class="text-lead text-black">We use AI to help you track and improve your wellbeing, because work is
+                just one aspect of your life.
+                <br><br>
+                Your tasks are automatically tagged to help you track and improve your intellectual, occupational,
+                physical, and social wellbeing.
+              </p>
 
-              </div>
+            </div>
           </div>
         </div>
 
@@ -228,7 +235,7 @@
                         <div class="d-flex px-2 py-1 align-items-center">
                           <div>
                             <i class="bi bi-mortarboard-fill"></i>
-                            
+
                           </div>
                           <div class="ms-4">
                             <p class="text-xs font-weight-bold mb-0">Intellectual:</p>
@@ -362,29 +369,30 @@
 
         <div class="col-xl-7 col-lg-7 col-md-7 h-100 justify-content-end">
           <div class="card card-carousel overflow-hidden h-100 p-0">
-            
-            <div class="carousel-item h-100 active" style="background-image: url('static/chris-curry-UJij-wz7w88-unsplash.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-                
-                <div class=" mt-1">
-                  <p class=" ms-2" style="color: aliceblue; height: 450px;"></a></p>
-                </div>
+
+            <div class="carousel-item h-100 active"
+              style="background-image: url('static/chris-curry-UJij-wz7w88-unsplash.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+              <div class=" mt-1">
+                <p class=" ms-2" style="color: aliceblue; height: 450px;"></a></p>
               </div>
+            </div>
 
           </div>
         </div>
 
-        
+
         <div class="col-xl-4 col-lg-4 col-md-4 h-100">
           <div class="overflow-hidden h-100 p-0 ">
 
-              <div class="carousel-item h-100 active align-items-center vertical-center">
-                <h3 class="text-black mb-2 mt-4">Daily Motivation 🤗</h3>
-                <p class="text-lead text-black">We partnered with Unsplash to keep you motivated!
-                  <br><br>
-                  Get a new motivational picture every time you visit your dashboard.
-                </p>
+            <div class="carousel-item h-100 active align-items-center vertical-center">
+              <h3 class="text-black mb-2 mt-4">Daily Motivation 🤗</h3>
+              <p class="text-lead text-black">We partnered with Unsplash to keep you motivated!
+                <br><br>
+                Get a new motivational picture every time you visit your dashboard.
+              </p>
 
-              </div>
+            </div>
           </div>
         </div>
 
@@ -398,16 +406,17 @@
         <div class="col-xl-6 col-lg-6 col-md-6 h-100">
           <div class="overflow-hidden h-100 p-0 ">
 
-              <div class="carousel-item h-100 active align-items-center vertical-center">
-                <h3 class="text-black mb-2 mt-6 text-center">Always Free to Students/Educators! ❤️</h3>
-                <p class="text-lead text-black text-center">Students and educators can sign-up with a <b>.edu</b> email to get iPlan-It for free.</p>
-                <p class="text-lead text-black text-center">Not a student and you want to use iPlan-It for free? <br>
-                  We get it, inflation and stuff, your first month is on us! 🎉</p>
-                  <p class="text-lead text-black text-center">After that iPlan-It is $5/month or $50/year.</p>
-                </p>
+            <div class="carousel-item h-100 active align-items-center vertical-center">
+              <h3 class="text-black mb-2 mt-6 text-center">Always Free to Students/Educators! ❤️</h3>
+              <p class="text-lead text-black text-center">Students and educators can sign-up with a <b>.edu</b> email to
+                get iPlan-It for free.</p>
+              <p class="text-lead text-black text-center">Not a student and you want to use iPlan-It for free? <br>
+                We get it, inflation and stuff, your first month is on us! 🎉</p>
+              <p class="text-lead text-black text-center">After that iPlan-It is $5/month or $50/year.</p>
+              </p>
 
-                <!-- A gratitude-based Business model means that you can support Plan-it if you like it, but you don't have to -->
-              </div>
+              <!-- A gratitude-based Business model means that you can support Plan-it if you like it, but you don't have to -->
+            </div>
           </div>
         </div>
 
@@ -482,9 +491,9 @@
                         </g>
                       </svg> &nbsp;
                       Google</button> -->
-                      <button type="submit" class="btn bg-gradient-primary w-100 my-2 mb-2">
-                        
-                        Join the Waitlist!</button>
+                    <button type="submit" class="btn bg-gradient-primary w-100 my-2 mb-2">
+
+                      Join the Waitlist!</button>
                   </div>
                 </form>
               </div>
@@ -536,7 +545,8 @@
           <a href="javascript:;" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
             About
           </a>
-          <a href="https://github.com/nalmadi/iPlan-it/issues/new" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
+          <a href="https://github.com/nalmadi/iPlan-it/issues/new" target="_blank"
+            class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
             Feedback
           </a>
           <a href="license" target="_blank" class="text-secondary me-xl-5 me-3 mb-sm-0 mb-2">
@@ -569,7 +579,8 @@
       </div>
       <div class="row">
         <div class="col-8 mx-auto text-center mt-1">
-          © <script>
+          ©
+          <script>
             document.write(new Date().getFullYear())
           </script>,
           made with <i class="fa fa-heart"></i> by

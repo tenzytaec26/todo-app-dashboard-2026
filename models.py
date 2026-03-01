@@ -10,7 +10,7 @@ class User(db.Model, UserMixin):
     password_hash = db.Column(db.String(128), nullable=False)
     tasks = db.relationship('Task', backref='user')
     visits = db.relationship('Visit')  # added visits to user
-
+    created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
     def set_password(self, password):
         """Hash the password and store it."""
         self.password_hash = generate_password_hash(password)
@@ -64,3 +64,15 @@ class Waitlist(db.Model):
 
     def __repr__(self):
         return f"<Waitlist id={self.id} email='{self.email}' timestamp={self.timestamp}>"
+
+
+
+class ActivityLog(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=True)
+    action = db.Column(db.String(200), nullable=False)
+    task_type = db.Column(db.String(200), nullable=True)
+    timestamp = db.Column(db.DateTime, default=db.func.current_timestamp())
+
+    def __repr__(self):
+        return f"<ActivityLog id={self.id} user={self.user} action='{self.action}' timestamp={self.timestamp}>"

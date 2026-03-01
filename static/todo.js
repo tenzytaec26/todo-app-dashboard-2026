@@ -15,7 +15,7 @@ function addTaskToList(task) {
   const taskList = document.getElementById('task-list');
   const li = document.createElement('li');
   li.innerHTML += `<a href="#" id="task-${task.id}" class="" onclick="toggleTaskStatus(${task.id})">${task.title}</a>
-                  <a href="#" id="task-${task.id}" class="remove-btn" onclick="removeTask(${task.id})">🗑️</a>`;
+                  <a href="#" id="remove-${task.id}" class="remove-btn" onclick="removeTask(${task.id})">🗑️</a>`;
   taskList.appendChild(li);
 }
 

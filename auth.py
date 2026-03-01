@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, redirect, url_for
 from flask import request
-from models import db, User
+from models import db, User, ActivityLog
 from flask_login import login_user, logout_user, login_required
 
 # Create a blueprint
@@ -43,6 +43,12 @@ def login():
         if user and user.check_password(password):
             login_user(user)
             return redirect(url_for('main.todo'))
+        else:
+            error_log = ActivityLog(user=user.id if user else None, action='failed login', task_type = 'error')
+            db.session.add(error_log)
+            db.session.commit()
+
+        return redirect(url_for('auth.login'))
         
     return render_template('login.html')
 
